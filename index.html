@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Samura Rahman – Data Science, AI, ML, Web Development Portfolio" />
+    <title>Samura Rahman | Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+    <div class="cursor-trail"></div>
+
+    <!-- Fixed Background Video -->
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="bg-video.mp4" type="video/mp4" />
+        Your browser does not support video.
+    </video>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Welcome Screen -->
+    <section id="welcome" class="fullscreen">
+        <div class="welcome-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Samura Rahman</p>
+            <div class="scroll-hint">
+                <i class="fas fa-chevron-down"></i>
+                <span>Scroll Down</span>
+            </div>
+        </div>
+        <!-- Mobile Swipe Hint -->
+        <div class="swipe-hint">
+            <i class="fas fa-hand-point-down"></i>
+            <span>Swipe</span>
+        </div>
+    </section>
+
+    <!-- Intro Screen -->
+    <section id="intro" class="fullscreen section">
+        <div class="intro-content">
+            <img src="IMG_3954~2-modified (1).png" alt="Samura Rahman" class="profile-pic" data-stagger="1" />
+            <div class="intro-text" data-stagger="2">
+                <h2 id="typing-text"></h2>
+                <div class="intro-buttons" data-stagger="4">
+                    <a href="#projects" class="btn primary">View My Work</a>
+                    <a href="#contact" class="btn secondary">Get In Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience / Projects -->
+    <section id="projects" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card" data-stagger="2" data-hover="The EWU Slice">
+                    <div class="project-preview">
+                        <img src="2025-05-21 at 13.56.24_a3fe20b8.jpg" alt="Project Preview" class="project-screenshot" />
+                        <div class="project-overlay">
+                            <h3>THE EWU SLICE</h3>
+                            <p>Online Food Order & Delivery System</p>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>THE EWU SLICE – Online Food Order & Delivery System</h3>
+                        <p>Developed a full-stack web application inspired by Domino's Pizza for an online chained restaurant platform as part of the <strong>CSE 412 - Software Engineering</strong> course at East West University.</p>
+                        <div class="project-features">
+                            <p><strong>Features:</strong> Menu browsing, order customization, real-time delivery tracking, customer profiles, admin & rider dashboards.</p>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="#" class="btn primary" data-demo="true">Live Demo</a>
+                            <a href="https://github.com/TasfiaTahsinAnnita/The_EWU_SLICE" class="btn secondary" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add more project cards here -->
+                <div class="project-placeholder" data-stagger="3">
+                    <div class="coming-soon">
+                        <i class="fas fa-rocket"></i>
+                        <p>More Projects Coming Soon</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Skills</h2>
+            <div class="project-card">
+                <div class="skills-grid">
+                    <div class="skill-bar" data-skill="90" data-stagger="2"><span>Python</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="85" data-stagger="3"><span>JavaScript</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="80" data-stagger="4"><span>C++</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="75" data-stagger="5"><span>PHP</span><div class="bar"></div></div>
+
+                    <div class="skill-bar" data-skill="90" data-stagger="6"><span>HTML/CSS</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="80" data-stagger="7"><span>React</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="75" data-stagger="8"><span>Node.js</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="85" data-stagger="9"><span>Git</span><div class="bar"></div></div>
+
+                    <div class="skill-bar" data-skill="70" data-stagger="10"><span>C</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="80" data-stagger="11"><span>Machine Learning</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="75" data-stagger="12"><span>Data Analysis</span><div class="bar"></div></div>
+                    <div class="skill-bar" data-skill="70" data-stagger="13"><span>AutoCAD</span><div class="bar"></div></div>
+
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Education</h2>
+            <table data-stagger="2">
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Result</th>
+                    <th>Duration</th>
+                </tr>
+                <tr class="education-row" data-stagger="3">
+                    <td>BSc in Computer Science and Engineering</td>
+                    <td>East West University</td>
+                    <td>CGPA: 3.36</td>
+                    <td>Oct 2021 – Sep 2025</td>
+                </tr>
+                <tr class="education-row" data-stagger="4">
+                    <td>Higher Secondary Certificate (HSC)</td>
+                    <td>Dr. Mahbubur Rahman Mollah College</td>
+                    <td>GPA: 5.00</td>
+                    <td>2020</td>
+                </tr>
+                <tr class="education-row" data-stagger="5">
+                    <td>Secondary School Certificate (SSC)</td>
+                    <td>Sobuj Biddapith School And College</td>
+                    <td>GPA: 5.00</td>
+                    <td>2018</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Publications</h2>
+            <div class="publications-grid" data-stagger="2">
+                <div class="publication" data-stagger="3">
+                    <p><strong>Smart Diagnosis and Early Intervention in PCOS</strong> – <em>ICCCNT-2025, IIT Indore</em> [Accepted]</p>
+                </div>
+                <div class="publication" data-stagger="4">
+                    <p><strong>Distinguishing Green Behaviour among Plastic Consumers</strong> – <em>ICCCNet-2025, UK</em> [Accepted]</p>
+                </div>
+                <div class="publication" data-stagger="5">
+                    <p><strong>Bangladeshi Dry Food Image Dataset</strong> – <em>Data in Brief (2025)</em> [Submitted]</p>
+                </div>
+                <div class="publication" data-stagger="6">
+                    <p><strong>Advancements in Breast Cancer Detection</strong> – <em>MDPI (2025)</em> [Accepted] <a href="https://www.mdpi.com/2673-7426/5/3/46" target="_blank">(Read Here)</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Certificates</h2>
+            <div class="project-card">
+                <div class="certificates-grid">
+                    <img src="2nd position .jpg" alt="Certificate 1" onclick="enlargeImg(this)" data-stagger="2">
+                    <img src="Convocation .jpg" alt="Certificate 2" onclick="enlargeImg(this)" data-stagger="3">
+                    <img src="ewu MUN.jpg" alt="Certificate 3" onclick="enlargeImg(this)" data-stagger="4">
+                    <img src="EWU ROBOFEST.jpg" alt="Certificate 4" onclick="enlargeImg(this)" data-stagger="5">
+                    <img src="IOT Seminar .jpg" alt="Certificate 5" onclick="enlargeImg(this)" data-stagger="6">
+                    <img src="IT Olympiad.jpg" alt="Certificate 6" onclick="enlargeImg(this)" data-stagger="7">
+                    <img src="science carnival .jpg" alt="Certificate 7" onclick="enlargeImg(this)" data-stagger="8">
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                    <div class="grid-spacer"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Contact Me</h2>
+            <div class="contact-info" data-stagger="2">
+                <p class="contact-item"><i class="fas fa-phone"></i> 01817682373</p>
+                <p class="contact-item"><i class="fas fa-envelope" id="copy-email"></i> samura.rahman14@gmail.com</p>
+                <p class="contact-item"><i class="fas fa-map-marker-alt"></i> 82/2-C North Jatrabari, Dhaka-1204</p>
+                <div class="social-links" data-stagger="3">
+                    <a href="https://www.linkedin.com/in/samurarahman14/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Samurarahman" target="_blank" class="social-link"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/samura420/" target="_blank" class="social-link"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Send Message -->
+    <section id="message" class="fullscreen section">
+        <div class="container">
+            <h2 data-stagger="1">Send Me a Message</h2>
+            <form id="contact-form" action="https://formspree.io/f/xpwkqjla" method="POST" class="message-form" data-stagger="2">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="Your Email" required />
+                </div>
+                <div class="form-group">
+                    <input type="text" name="subject" placeholder="Subject" required />
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn send-btn primary">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+            <div id="form-response"></div>
+        </div>
+    </section>
+
+    <!-- Dot Navigation -->
+    <nav class="dot-nav">
+        <div class="dot active" data-target="#intro"></div>
+        <div class="dot" data-target="#projects"></div>
+        <div class="dot" data-target="#skills"></div>
+        <div class="dot" data-target="#education"></div>
+        <div class="dot" data-target="#publications"></div>
+        <div class="dot" data-target="#certificates"></div>
+        <div class="dot" data-target="#contact"></div>
+        <div class="dot" data-target="#message"></div>
+    </nav>
+
+    <!-- Header (Sticky) -->
+    <header>
+        <div class="logo">
+            <img src="download.png" alt="Logo" />
+            <span>Samura Rahman</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#intro">Intro</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#message">Message</a></li>
+            </ul>
+        </nav>
+        <div class="header-controls">
+            <button id="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+            </button>
+            <a href="samuraCV (1).pdf" download class="cv-download-btn" title="Download CV" id="cv-download">
+                <i class="fas fa-file-pdf"></i>
+            </a>
+        </div>
+        <div class=" 注意 hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </header>
+
+    <!-- Download Toast -->
+    <div id="download-toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>CV Downloaded!</span>
+    </div>
+
+    <!-- Email Copied Toast -->
+    <div id="email-toast" class="toast">
+        <i class="fas fa-check-circle"></i>
+        <span>Email Copied!</span>
+    </div>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Samura Rahman",
+      "jobTitle": "Data Science & AI Enthusiast",
+      "email": "samura.rahman14@gmail.com",
+      "telephone": "01817682373",
+      "address": "82/2-C North Jatrabari, Jatrabari, Dhaka-1204",
+      "url": "https://samurarahman.com",
+      "sameAs": [
+        "https://www.linkedin.com/in/samurarahman14/",
+        "https://github.com/Samurarahman"
+      ]
+    }
+    </script>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
